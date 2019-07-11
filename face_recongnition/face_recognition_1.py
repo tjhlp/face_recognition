@@ -2,12 +2,12 @@
 
 
 # 检测人脸
-import face_recognition_1
+import face_recognition
 import cv2
 
 # 读取图片并识别人脸
-img = face_recognition_1.load_image_file("1.png")
-face_locations = face_recognition_1.face_locations(img)
+img = face_recognition.load_image_file("1.png")
+face_locations = face_recognition.face_locations(img)
 print(face_locations)
 
 # 调用opencv函数显示图片
